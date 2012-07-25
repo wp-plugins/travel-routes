@@ -13,7 +13,7 @@ Hi folks.
 
 Here is a plugin to display your travels on customizable maps. I worked a lot on it, and it's working pretty well. Today I feel like sharing it, but there is still some minor bugs to fix.
 
-<a href="http://embuskad.fr/new/">VIEW THE DEMO</a>
+<a href="http://webmaestro.fr/blog/travels/">VIEW THE DEMO</a>
 
 After you have installed it, you will have a new taxonomy called "route_locations", and a new metabox "Travel Route" will allow you to attach different places to your post. This is using the Google API, and automatically create the new terms, regarding to their hierarchy (country > region > city ...). You can order those places randomly or by date.
 
