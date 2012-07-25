@@ -19,7 +19,7 @@ After you have installed it, you will have a new taxonomy called "route_location
 
 Then there is a widget, which is in fact the map. This map is in SVG format, and react to different actions (hover on posts and terms links...). You can edit its colors as well.
 
-I still have many things to improve as this is one of my main projects those days. Any contributor is welcome, and most of all I need feedback.
+I still have many things to improve as this is one of my main projects those days. Any contributor is welcome, and most of all: <a href="http://webmaestro.fr/blog/travel-routes-wordpress-plugin/">I need feedback</a>.
 
 Enjoy folks.
 
