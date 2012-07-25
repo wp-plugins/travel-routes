@@ -4,7 +4,6 @@ Donate link: http://webmaestro.fr/blog/2012/travel-routes-wordpress-plugin/
 Tags: travel, route, location, customizable, map
 Requires at least: 3.4
 Tested up to: 3.4.1
-Stable tag: 0
 
 [BETA] Display your travels on customizable maps !
 
