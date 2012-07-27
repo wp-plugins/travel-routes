@@ -57,6 +57,6 @@ Fixed the JS bug on empty maps.
 
 == Known issues ==
 
-An <code>OVER_QUERY_LIMIT</code> error from the <a href="https://developers.google.com/maps/documentation/geocoding/">Google Geocoding API</a> is showing up way too often. If any contributor could <a href="https://github.com/WebMaestroFr/Travel-Routes-Wordpress-Plugin/blob/master/admin.php#LC138">take a look at the insert_term() function</a>, that would be awesome.
+An OVER_QUERY_LIMIT error from the <a href="https://developers.google.com/maps/documentation/geocoding/">Google Geocoding API</a> is showing up way too often. If any contributor could <a href="https://github.com/WebMaestroFr/Travel-Routes-Wordpress-Plugin/blob/master/admin.php#LC138">take a look at the insert_term() function</a>, that would be awesome.
 
 `<?php code(); ?>`
