@@ -4,25 +4,20 @@ Donate link: http://webmaestro.fr/blog/2012/travel-routes-wordpress-plugin/
 Tags: travel, route, location, customizable, map
 Requires at least: 3.4
 Tested up to: 3.4.1
+Stable tag: 1.0
+License: GPLv2
 
-[BETA] Display your travels on customizable maps !
+(BETA) Display your travels on customizable maps !
 
 == Description ==
 
-Hi folks.
+Easily add geographical tags on a map when you write a post, and it will automatically create new countries and localities terms. You can also order those locations randomly or by date to define your routes.
 
-Here is a plugin to display your travels on customizable maps. I worked a lot on it, and it's working pretty well. Today I feel like sharing it, but there is still some minor bugs to fix.
+Use the map as a widget, and pick your own colors to customize it. It is a SVG map that react to users actions (mouse over posts and terms links, click on route line...).
 
-<a href="http://webmaestro.fr/blog/travels/">VIEW THE DEMO</a>
+<a class="btn btn-info" href="http://webmaestro.fr/blog/travels/">See the demo</a> !
 
-After you have installed it, you will have a new taxonomy called "route_locations", and a new metabox "Travel Route" will allow you to attach different places to your post. This is using the Google API, and automatically create the new terms, regarding to their hierarchy (country > region > city ...). You can order those places randomly or by date.
-
-Then there is a widget, which is in fact the map. This map is in SVG format, and react to different actions (hover on posts and terms links...). You can edit its colors as well.
-
-I still have many things to improve as this is one of my main projects those days. Any contributor is welcome, and most of all: <a href="http://webmaestro.fr/blog/travel-routes-wordpress-plugin/">I need feedback</a>.
-
-Enjoy folks.
-
+<div class="alert alert-info">This plugin is in <strong>BETA</strong>, I published it for tests, <a href="https://github.com/WebMaestroFr/Travel-Routes-Wordpress-Plugin" title="Github">contributions</a> and feedback.</div>
 
 == Installation ==
 
@@ -32,20 +27,18 @@ Enjoy folks.
 4. Add the widget (the map) anywhere on your blog
 5. Tell me what you think about it
 
-
 == Frequently Asked Questions ==
-
-= Why are so many people suffering ? =
-
-Well, I don't know. This is not the topic here anyway. More "Frequently Asked Questions" to come buddy.
 
 
 == Screenshots ==
 
-1. This is the user-friendly form to attach locations to your post.
-2. This is the customizable map (the widget). Maybe you should <a href="http://embuskad.fr/new/">take a look at the demo</a>.
+1. Easily add geographical tags on a map when you write a post, and it will automatically create new countries and localities terms. You can also order those locations randomly or by date to define your routes.
+2. Use the map as a widget, and pick your own colors to customize it. It is a SVG map that react to users actions (mouse over posts and terms links, click on route line...).</a>.
 
 == Changelog ==
+
+= 0.2 =
+* Fixed the JS bug on empty maps.
 
 = 0.2 =
 * Wrapping it with nice paper.
@@ -58,5 +51,12 @@ Well, I don't know. This is not the topic here anyway. More "Frequently Asked Qu
 
 = 0.2 =
 Give me feedback fellows !
+
+= 0.3 =
+Fixed the JS bug on empty maps.
+
+== Known issues ==
+
+An <code>OVER_QUERY_LIMIT</code> error from the <a href="https://developers.google.com/maps/documentation/geocoding/">Google Geocoding API</a> is showing up way too often. If any contributor could <a href="https://github.com/WebMaestroFr/Travel-Routes-Wordpress-Plugin/blob/master/admin.php#LC138">take a look at the insert_term() function</a>, that would be awesome.
 
 `<?php code(); ?>`
