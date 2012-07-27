@@ -15,9 +15,9 @@ Easily add geographical tags on a map when you write a post, and it will automat
 
 Use the map as a widget, and pick your own colors to customize it. It is a SVG map that react to users actions (mouse over posts and terms links, click on route line...).
 
-<a class="btn btn-info" href="http://webmaestro.fr/blog/travels/">See the demo</a> !
+[Demo](http://webmaestro.fr/blog/travels/ "See the demo") !
 
-<div class="alert alert-info">This plugin is in <strong>BETA</strong>, I published it for tests, <a href="https://github.com/WebMaestroFr/Travel-Routes-Wordpress-Plugin" title="Github">contributions</a> and feedback.</div>
+This plugin is in beta, I published it for tests, [GitHub](https://github.com/WebMaestroFr/Travel-Routes-Wordpress-Plugin "contributions") and feedback.
 
 == Installation ==
 
@@ -57,6 +57,6 @@ Fixed the JS bug on empty maps.
 
 == Known issues ==
 
-An OVER_QUERY_LIMIT error from the <a href="https://developers.google.com/maps/documentation/geocoding/">Google Geocoding API</a> is showing up way too often. If any contributor could <a href="https://github.com/WebMaestroFr/Travel-Routes-Wordpress-Plugin/blob/master/admin.php#LC138">take a look at the insert_term() function</a>, that would be awesome.
+An OVER_QUERY_LIMIT error from the [GGeoAPI](https://developers.google.com/maps/documentation/geocoding/ "Google Geocoding API") is showing up way too often. If any contributor could [Bug](https://github.com/WebMaestroFr/Travel-Routes-Wordpress-Plugin/blob/master/admin.php#LC138 "take a look at the insert_term() function"), that would be awesome.
 
 `<?php code(); ?>`
