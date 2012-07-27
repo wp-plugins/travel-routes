@@ -29,6 +29,9 @@ This plugin is in beta, I published it for tests, [GitHub](https://github.com/We
 
 == Frequently Asked Questions ==
 
+= No questions so far =
+
+No answer neither.
 
 == Screenshots ==
 
