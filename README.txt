@@ -40,7 +40,7 @@ No answer neither.
 
 == Changelog ==
 
-= 0.2 =
+= 0.3 =
 * Fixed the JS bug on empty maps.
 
 = 0.2 =
@@ -51,6 +51,9 @@ No answer neither.
 * First draft.
 
 == Upgrade Notice ==
+
+= 0.3 =
+* Fixed the JS bug on empty maps.
 
 = 0.2 =
 Give me feedback fellows !
