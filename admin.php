@@ -167,14 +167,9 @@ class TravelRoutesAdmin {
 			}
 			// Save the locality (city or town)
 			if ( isset( $components['locality'] ) ) {
-				$parent = self::save_location( $components['locality'], $parent );
-			}
-			// Save the lowest level component
-			$location = reset($components);
-			if ( $components['locality']['long_name'] == $location['long_name'] ) {
-				$term_id = $parent;
+				$term_id = self::save_location( $components['locality'], $parent );
 			} else {
-				$term_id = self::save_location( $location, $parent );
+				$term_id = self::save_location( reset($components), $parent );
 			}
 			// Save the details and dates related to our new lowest level term
 			update_metadata('taxonomy', $term_id, 'details', $details, true );
