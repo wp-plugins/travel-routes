@@ -154,8 +154,8 @@ class TravelRoutesAdmin {
 			foreach ( $details['address_components'] as $component ) {
 				// The component's type can either be a string, or an array. Let's use a string (see https://developers.google.com/maps/documentation/geocoding/#JSON).
 				if ( is_array( $type = $component['types'] ) ) $type = $type[0];
-				// Exclude the unwanted components
-				if ( !in_array( $type, array( 'postal_code', 'post_box', 'street_number', 'floor', 'room' ) ) ) {
+				// Just keep the wanted components
+				if ( in_array( $type, array( 'country', 'administrative_area_level_1', 'administrative_area_level_2', 'administrative_area_level_3', 'colloquial_area', 'locality', 'natural_feature', 'point_of_interest' ) ) ) {
 					$components[$type] = $component;
 				}
 			}
@@ -167,9 +167,14 @@ class TravelRoutesAdmin {
 			}
 			// Save the locality (city or town)
 			if ( isset( $components['locality'] ) ) {
-				$term_id = self::save_location( $components['locality'], $parent );
+				$parent = self::save_location( $components['locality'], $parent );
+			}
+			// Save the lowest level component
+			$location = reset($components);
+			if ( $components['locality']['long_name'] == $location['long_name'] ) {
+				$term_id = $parent;
 			} else {
-				$term_id = self::save_location( reset($components), $parent );
+				$term_id = self::save_location( $location, $parent );
 			}
 			// Save the details and dates related to our new lowest level term
 			update_metadata('taxonomy', $term_id, 'details', $details, true );
