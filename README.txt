@@ -44,7 +44,7 @@ No answer neither.
 == Changelog ==
 
 = 1.1 =
-* Use the lowest level address component only if the locality is not found (avoid unwanted street addresses).
+* Only keep interesting components (avoid unwanted street addresses).
 
 = 1.0 =
 * Solved the main Query Limit issue.
@@ -67,7 +67,7 @@ No answer neither.
 == Upgrade Notice ==
 
 = 1.1 =
-* Use the lowest level address component only if the locality is not found (avoid unwanted street addresses).
+* Only keep interesting components (avoid unwanted street addresses).
 
 = 1.0 =
 * Solved the main Query Limit issue.
