@@ -1,6 +1,6 @@
 === Travel Routes ===
 Contributors: WebMaestro.Fr
-Donate link: http://webmaestro.fr/travel-routes-wordpress-plugin/
+Donate link: http://webmaestro.fr/blog/travel-routes-wordpress-plugin/
 Tags: travel, route, location, customizable, map
 Requires at least: 3.4
 Tested up to: 3.4.1
@@ -15,7 +15,7 @@ Easily add geographical tags on a map when you write a post, and it will automat
 
 Use the map as a widget, and pick your own colors to customize it. It is a SVG map that react to users actions (mouse over posts and terms links, click on route line...).
 
-Ask your questions on [the plugin page](http://webmaestro.fr/travel-routes-wordpress-plugin/ "Plugin Page").
+Ask your questions on [the plugin page](http://webmaestro.fr/blog/travel-routes-wordpress-plugin/ "Plugin Page").
 
 [See the demo](http://ouestetienne.com "Demo") !
 
@@ -79,3 +79,13 @@ No answer neither.
 
 = 0.3 =
 * Fixed the JS bug on empty maps.
+
+= 0.2 =
+Give me feedback fellows !
+
+= 0.3 =
+Fixed the JS bug on empty maps.
+
+== Known issues ==
+
+An OVER_QUERY_LIMIT error from the [Google Geocoding API](https://developers.google.com/maps/documentation/geocoding/ "Google Geocoding API") is showing up way too often. If any contributor could [take a look at the insert_term() function](https://github.com/WebMaestroFr/Travel-Routes-Wordpress-Plugin/blob/master/admin.php#LC138 "Bug"), that would be awesome.
